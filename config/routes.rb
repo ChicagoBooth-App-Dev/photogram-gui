@@ -4,4 +4,7 @@ Rails.application.routes.draw do
 
   get('/users/:username', { :controller => 'users', :action => 'show_username'})
 
+
+  get('/photos', { :controller => 'photos', :action => 'index'})
+
 end
