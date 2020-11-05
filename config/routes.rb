@@ -12,8 +12,6 @@ Rails.application.routes.draw do
 
 
 
-
-
   get('/photos', { :controller => 'photos', :action => 'index'})
 
   get('/photos/:photo_id', { :controller => 'photos', :action => 'show_photo'})
@@ -25,4 +23,5 @@ Rails.application.routes.draw do
   get('/update_photo/:photo_id', { :controller => 'photos', :action => 'update'})
 
 
+  get('/insert_comment_record', { :controller => 'photos', :action => 'comment'})
 end
