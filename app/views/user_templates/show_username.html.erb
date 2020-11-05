@@ -1,0 +1,33 @@
+<h1><%= @username_object.username %></h1>
+
+<dl>
+  <dt>ID</dt>
+    <dd><%= @username_object.id %></dd>
+  <dt>Edit User</dt>
+    <dd>Form goes here</dd>
+</dl>
+
+<h2>Own photos (<%= @username_object.own_photos.count %>)</h2>
+
+<table border = '1'>
+  <tr>
+    <th>Image</th>
+    <th>Owner</th>
+    <th>Caption</th>
+    <th>Posted</th>
+    <th></th>
+  </tr>
+  
+  <% @username_object.own_photos.each do |a_photo| %>
+  
+    <tr>
+      <td></td>
+      <td><%= a_photo.poster.username %></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  
+  <% end %>
+
+</table>
