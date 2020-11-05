@@ -14,10 +14,10 @@
     <dd>
       <form action="/update_photo/<%= @photo_object.id %>">
         <label for="browser_image">Image</label>
-        <input id="browser_image" type="text" name="input_image" placeholder="Enter a URL for the image..." value="<%= @photo_object.image %>">
+        <input id="browser_image" type="text" name="query_image" placeholder="Enter a URL for the image..." value="<%= @photo_object.image %>">
 
         <label for="browser_caption">Caption</label>
-        <textarea id="browser_caption" name="input_caption" placeholder="Enter a caption for the photo..."><%= @photo_object.caption %></textarea>
+        <textarea id="browser_caption" name="query_caption" placeholder="Enter a caption for the photo..."><%= @photo_object.caption %></textarea>
 
         <button>Update photo</button>
       </form>

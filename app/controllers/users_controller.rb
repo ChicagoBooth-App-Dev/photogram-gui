@@ -16,4 +16,14 @@ class UsersController < ApplicationController
     end
   end
 
+  def update_username
+    #Parameters: {"input_username"=>"anisa69", "username"=>"117"}
+    target_id = params.fetch('username_id')
+    target_username = User.where({ :id => target_id}).first
+    target_username.username = params.fetch('input_username')
+    target_username.save
+    redirect_to('/users/' + target_username.username.to_s)
+    # render({ :template => "user_templates/update_username.html.erb"})
+  end
+
 end
