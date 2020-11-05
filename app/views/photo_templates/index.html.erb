@@ -16,16 +16,12 @@
 
     <td><%= a_photo.caption %></td>
 
-    <td>
-      catherina
-    </td>
+    <td><%= a_photo.poster.username %></td>
+
+    <td><%= a_photo.created_at %></td>
 
     <td>
-      2019-04-27 11:56:39 UTC
-    </td>
-
-    <td>
-      <a href="/photos/777">
+      <a href="/photos/<%= a_photo.id %>">
         Show details
       </a>
     </td>
