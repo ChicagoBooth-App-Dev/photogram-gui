@@ -4,4 +4,8 @@ class PhotosController < ApplicationController
     render ({ :template => "photo_templates/index.html.erb"})
   end
 
+  def show_photo
+    render ({ :template => "photo_templates/show_photos.html.erb"})
+  end
+
 end
