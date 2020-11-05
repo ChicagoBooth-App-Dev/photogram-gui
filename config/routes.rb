@@ -7,6 +7,11 @@ Rails.application.routes.draw do
   get('/users/:username', { :controller => 'users', :action => 'show_username'})
 
   get('/update_user/:username_id', { :controller => 'users', :action => 'update_username'})
+  
+  get('/insert_user_record', { :controller => 'users', :action => 'create_username'})
+
+
+
 
 
   get('/photos', { :controller => 'photos', :action => 'index'})
